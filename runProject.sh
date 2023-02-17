@@ -9,3 +9,12 @@ docker run -p 5005:5005 my-flask-app
 
 #once connected test the app by running the test script
 #python3 testServer.py
+
+#if exists, delete : 
+#kubectl delete deployment pingpong
+#kubectl delete service pingpong
+
+#For more logs
+#kubectl describe pods <pod-name>
+#docker tag pingpong-flask-app refaelsa/pingpong:flask-app
+#docker push refaelsa/pingpong
