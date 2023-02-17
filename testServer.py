@@ -7,6 +7,7 @@ body = {
 }
 
 pathUri = 'http://localhost:5005/pingpong'
+#pathUri = 'http://10.111.52.99:5005/pingpong'
 request = requests.get(pathUri, json=body, verify=False,)
 #request = requests.get('https://rafis-vra.terasky.local{}'.format(pathUri), verify=False, headers=header)
 content = json.loads(request.text)

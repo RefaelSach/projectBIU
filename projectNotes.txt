@@ -18,3 +18,10 @@ docker run -p 5005:5005 my-flask-app
 #kubectl describe pods <pod-name>
 #docker tag pingpong-flask-app refaelsa/pingpong:flask-app
 #docker push refaelsa/pingpong
+
+#to connect to a pod and run testServer.py
+#kubectl exec -it <containterName> -- python /app/testServer.py
+
+#kubectl get services
+
+#kubectl get svc pingpong
